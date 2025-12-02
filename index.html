@@ -62,20 +62,6 @@
 
 
     </style>
-    <script>
-        const myAudio = document.getElementById('myAudio');
-        const playPauseBtn = document.getElementById('playPauseBtn');
-
-        playPauseBtn.addEventListener('click', () => {
-        if (myAudio.paused) {
-            myAudio.play();
-            playPauseBtn.textContent = 'Pause';
-        } else {
-            myAudio.pause();
-            playPauseBtn.textContent = 'Play';
-        }
-        });
-    </script>
 </head>
 <body>
     <div class="header">
@@ -95,4 +81,18 @@
         </div>
         <a href="more.html">Learn more about me!</a>
     </div>
+    <script>
+        const myAudio = document.getElementById('myAudio');
+        const playPauseBtn = document.getElementById('playPauseBtn');
+
+        playPauseBtn.addEventListener('click', () => {
+        if (myAudio.paused) {
+            myAudio.play();
+            playPauseBtn.textContent = 'Pause';
+        } else {
+            myAudio.pause();
+            playPauseBtn.textContent = 'Play';
+        }
+        });
+    </script>
 </body>
